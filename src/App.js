@@ -1,5 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Component from "./Components/components.js";
 
 function App() {
   return (
@@ -11,12 +12,13 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/SouthpawCurveConcepts/rsb-components"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Link to repo
         </a>
+        <Component />
       </header>
     </div>
   );
