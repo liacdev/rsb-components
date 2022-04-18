@@ -1,4 +1,4 @@
-function Component() {
+function ReactComponent() {
   return (
     <div>
       <h2>React Components</h2>
@@ -7,4 +7,4 @@ function Component() {
   );
 }
 
-export default Component;
+export default ReactComponent;

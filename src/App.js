@@ -1,27 +1,37 @@
+import { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Component from "./Components/components.js";
+import ReactComponent from "./Components/reactcomponent.js";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://github.com/SouthpawCurveConcepts/rsb-components"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Link to repo
-        </a>
-        <Component />
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      name: "Jago",
+    };
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>Hi {this.state.name}</p>
+
+          <button
+            onClick={() => {
+              this.setState({ name: "Andrei" });
+            }}
+          >
+            Change name
+          </button>
+
+          <ReactComponent />
+        </header>
+      </div>
+    );
+  }
 }
 
 export default App;
